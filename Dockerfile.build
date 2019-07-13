@@ -22,10 +22,10 @@ RUN go get -v \
     github.com/dgrijalva/jwt-go \
     github.com/skip2/go-qrcode
 
-COPY *.go ./
-COPY static ./static
-COPY templates ./templates
-COPY email ./email
+ADD *.go ./
+ADD static ./static
+ADD templates ./templates
+ADD email ./email
 
 ARG BUILD_VERSION=unknown
 
